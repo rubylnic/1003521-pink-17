@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ксения](https://up.htmlacademy.ru/adaptive/17/user/1003521).
-* Наставник: Владимир Шнайдер.
+* Наставник: [Владимир Шнайдер](https://htmlacademy.ru/profile/id639951).
 
 ---
 
