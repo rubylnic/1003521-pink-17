@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Пинк: Фотографии пользователей</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-img" src="header-logo.svg" alt="Логотип приложения Пинк" width="75p" height="22">
+    </a>
+    <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a>Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Сайт приложения для обработки фотографий "Pink" </h1>
+    <section class="download-app">
+      <header class="download-app__header">
+        <img class="download-app-img" src="" width="" height="" alt="Iphone с розовой фотографией в руке">
+      </header>
+       <a class="download-app-btn" href="https://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com">Скачать приложение</a>
+        <ul class="download-app__list">
+          <li class="download-app__item">
+            <a class="download-app__apple" href="https://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com">Itunes</a>
+          </li>
+          <li class="download-app__item">
+            <a class="download-app__android" href="https://www.play.google.com">Google Play</a>
+          </li>
+          <li class="download-app__item">
+            <a class="download-app__windows" href="https://www.microsoft.com/ru-RU/store/apps">Microsoft Store</a>
+          </li>
+        </ul>
+    </section>
+    <section class="app-features">
+      <header class="app-features__header">
+        <b>Устали от серости мегаполиса?</b>
+        <b>Нам есть, что вам предложить!</b>
+      </header>
+      <ul class="app-features__list">
+        <li class="app-features__item">
+          <h2 class="app-features__heading">Поднимает настроение</h2>
+          <p class="app-features__paragraph">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="app-features__item">
+          <h2 class="app-features__heading">Меняет мир вокруг</h2>
+          <p class="app-features__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="app-features__item">
+          <h2 class="app-features__heading">Заводит новых друзей</h2>
+          <p class="app-features__paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+      <footer class="app-features__footer">
+        <img class="app-features__footer-img" src="" alt="Iphone со смайликом и текстом: &quot Всем привет! &quot">
+      </footer>
+    </section>
+
+    <section class="reviews">
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <h2 class="reviews__author-name">Николай Петров</h2>
+          <p class="reviews__review-text">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+        </li>
+      </ul>
+
+        <div class="reviews-buttons">
+          <button class="reviews-buttons__item" arialabel="Первый отзыв"></button>
+          <button class="reviews-buttons__item" arialabel="Второй отзыв"></button>
+          <button class="reviews-buttons__item" arialabel="Третий отзыв"></button>
+        </div>
+    </section>
+
+    <section class="app-variations">
+      <!-- Тарифы-->
+    </section>
+    <section class="contacts">
+      <!-- Контакты -->
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <a class="main-footer__logo">
+      <img class="main-footer__logo-img" src="header-logo.svg" alt="Логотип приложения Пинк" width="75p" height="22">
+    </a>
+    <ul class="socials-list">
+      <li class="socials-list__item">
+        <a href=""><span class="visually-hidden">Twitter</span></a>
+      </li>
+      <li class="socials-list__item">
+        <a href=""><span class="visually-hidden">Facebook</span></a>
+      </li>
+      <li class="socials-list__item">
+        <a href=""><span class="visually-hidden">Youtube</span></a>
+      </li>
+    </ul>
+    <p class="developed-by">
+      <b class="developed-by-left">Разработано —</b>
+      <a class="developed-by-right" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy.ru</a>
+    </p>
+  </footer>
+</body>
+
 </html>
