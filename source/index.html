@@ -3,16 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Пинк: Фотографии пользователей</title>
+  <title>Пинк: Главная</title>
 </head>
 
 <body>
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-img" src="header-logo.svg" alt="Логотип приложения Пинк" width="75" height="22">
+    <a class="main-header__logo logo">
+      <img class="logo__img" src="header__logo.svg" alt="Логотип приложения Пинк" width="75" height="22">
     </a>
-    <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
     <nav class="main-nav">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a>Главная</a>
@@ -29,32 +29,29 @@
       </ul>
     </nav>
   </header>
-
-  <main class="page-main">
-    <h1 class="visually-hidden">Сайт приложения для обработки фотографий "Pink" </h1>
+  <main>
+    <h1 class="visually-hidden">Сайт приложения для обработки фотографий "Pink"</h1>
     <section class="download-app">
       <h2 class="visually-hidden">Скачать приложение</h2>
-      <header class="download-app__header">
-        <img class="download-app__img" src="download-app.jpg" width="50" height="80" alt="Iphone с розовой фотографией в руке">
-      </header>
+      <img class="download-app__img" src="download-app.jpg" width="50" height="80" alt="Iphone с розовой фотографией в руке">
       <a class="download-app__btn" href="https://www.apple.com/itunes/">Скачать приложение</a>
-        <ul class="download-app__list">
-          <li class="download-app__item">
-            <a class="download-app__apple" href="https://www.apple.com/itunes/">Itunes</a>
-          </li>
-          <li class="download-app__item">
-            <a class="download-app__android" href="https://www.play.google.com">Google Play</a>
-          </li>
-          <li class="download-app__item">
-            <a class="download-app__windows" href="https://www.microsoft.com/ru-RU/store/apps">Microsoft Store</a>
-          </li>
-        </ul>
+      <ul class="download-app__list">
+        <li class="download-app__item">
+          <a class="download-app__apple" href="https://www.apple.com/itunes/">Itunes</a>
+        </li>
+        <li class="download-app__item">
+          <a class="download-app__android" href="https://www.play.google.com">Google Play</a>
+        </li>
+        <li class="download-app__item">
+          <a class="download-app__windows" href="https://www.microsoft.com/ru-RU/store/apps">Microsoft Store</a>
+        </li>
+      </ul>
     </section>
     <section class="app-features">
-      <h2 class="app-features__header">
-        <span>Устали от серости мегаполиса?</span>
-        <span>Нам есть, что вам предложить!</span>
-      </h2>
+      <p class="app-features__header">
+        <b>Устали от серости мегаполиса?</b>
+        <b>Нам есть, что вам предложить!</b>
+      </p>
       <ul class="app-features__list">
         <li class="app-features__item">
           <h2 class="app-features__heading">Поднимает настроение</h2>
@@ -73,24 +70,22 @@
         <img class="app-features__footer-img" src="app-features.jpg" alt="Iphone со смайликом и текстом: &quot;Всем привет!&quothttps://www.apple.com/itunes/https://www.apple.com/itunes/">
       </footer>
     </section>
-
     <section class="reviews">
+      <h2 class="visually-hidden">Отзывы</h2>
       <ul class="reviews__list">
         <li class="reviews__item">
-          <h2 class="reviews__author-name">Николай Петров</h2>
+          <h3 class="reviews__author-name">Николай Петров</h3>
           <p class="reviews__review-text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
         </li>
       </ul>
-
-        <div class="reviews-buttons">
-          <button class="reviews-buttons__item"></button>
-          <button class="reviews-buttons__item"></button>
-          <button class="reviews-buttons__item"></button>
-        </div>
+      <div class="reviews-buttons">
+        <button class="reviews-buttons__item"></button>
+        <button class="reviews-buttons__item"></button>
+        <button class="reviews-buttons__item"></button>
+      </div>
     </section>
-
     <section class="app-variations">
       <h2></h2>
       <!-- Тарифы-->
@@ -100,7 +95,6 @@
       <!-- Контакты -->
     </section>
   </main>
-
   <footer class="main-footer">
     <a class="main-footer__logo">
       <img class="main-footer__logo-img" src="header-logo.svg" alt="Логотип приложения Пинк" width="75" height="22">
