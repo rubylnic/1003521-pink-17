@@ -3,6 +3,10 @@
 
   "rules": {
     "declaration-no-important": true,
-    "indentation": [2, {"ignore": ["inside-parens"]}]
+    "indentation": [2, {"ignore": ["inside-parens"]}],
+	"block-opening-brace-space-before":always,
+	"declaration-colon-space-after":always,
+	"block-opening-brace-space-before":always,
+	"rule-empty-line-before":always
   }
 }
