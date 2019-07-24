@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк: Главная</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -46,6 +49,7 @@
           <a class="download-app__windows" href="https://www.microsoft.com/ru-RU/store/apps">Microsoft Store</a>
         </li>
       </ul>
+      <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
     <section class="app-features">
       <p class="app-features__header">
@@ -66,9 +70,9 @@
           <p class="app-features__paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
-      <footer class="app-features__footer">
-        <img class="app-features__footer-img" src="app-features.jpg" alt="Iphone со смайликом и текстом: &quot;Всем привет!&quothttps://www.apple.com/itunes/https://www.apple.com/itunes/">
-      </footer>
+      <div class="app-features__footer">
+        <img class="app-features__footer-img" src="app-features.jpg" alt="Iphone со смайликом и текстом: &quot;Всем привет!&quot" href="https://www.apple.com/itunes/https://www.apple.com/itunes/">
+      </div>
     </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы</h2>
@@ -87,11 +91,11 @@
       </div>
     </section>
     <section class="app-variations">
-      <h2>Тарифы</h2>
-      <!--Тарифы-->
+      <h2 class="visually-hidden">Тарифы</h2>
+      <!-- Тарифы-->
     </section>
     <section class="contacts">
-      <h2>Контакты</h2>
+      <h2 class="visually-hidden">Контакты</h2>
       <!-- Контакты -->
     </section>
   </main>
@@ -112,7 +116,7 @@
     </ul>
     <p class="developed-by">
       <b class="developed-by-left">Разработано —</b>
-      <a class="developed-by-right" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy.ru</a>
+      <a class="developed-by-right" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">htmlacademy.ru</span></a>
     </p>
   </footer>
 </body>
