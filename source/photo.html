@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Пинк: Фотографии пользователей</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="main-header">
+    <a class="main-header__logo logo">
+      <img class="logo__img" src="header__logo.svg" alt="Логотип приложения Пинк" width="75" height="22">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a>Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Сайт приложения для обработки фотографий "Pink"</h1>
+    <section class="users-pics">
+
+      <h2 class="users-pics__heading background-header">Фотографии пользователей</h2>
+
+      <p class="users-pics__description">Взляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <ul class="users-pics__list">
+        <li class="users-pics__item article">
+          <img class="article__image panorama" src="img-1.jpg" width="30" height="30" alt="Горы с высоты">
+          <h2 class="article__image-info"> Анна
+            <span class="article__time">(5 минут назад)</span>
+          </h2>
+          <p class="article__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <div class="article__like">
+            <div class="article__like-icon"></div>
+            <span class="article__like-count">Нравится: 215</span>
+          </div>
+        </li>
+        <li class="users-pics__item article">
+          <img class="article__image" src="img-2.jpg" width="30" height="30" alt="Штатив и белая машина вдали">
+          <h2 class="article__image-info"> Левон
+            <span class="article__time">(5 часов назад)</span>
+          </h2>
+          <p class="article__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <div class="article__like">
+            <div class="article__like-icon"></div>
+            <span class="article__like-count">Нравится: 356</span>
+          </div>
+        </li>
+        <li class="users-pics__item article">
+          <img class="article__image" src="img-3.jpg" width="30" height="30" alt="Барабанная установка">
+          <h2 class="article__image-info"> Антон
+            <span class="article__time">(12 часов назад)</span>
+          </h2>
+          <p class="article__description">Соседи будут рады!</p>
+          <div class="article__like">
+            <div class="article__like-icon"></div>
+            <span class="article__like-count">Нравится: 666</span>
+          </div>
+        </li>
+        <li class="users-pics__item article">
+          <img class="article__image" src="img-4.jpg" width="30" height="30" alt="Стеклянная крыша">
+          <h2 class="article__image-info">Борис
+            <span class="article__time">(20 часов назад)</span>
+          </h2>
+          <p class="article__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <div class="article__like">
+            <div class="article__like-icon"></div>
+            <span class="article__like-count">Нравится: 215</span>
+          </div>
+        </li>
+        <li class="users-pics__item article">
+          <img class="article__image" src="img-5.jpg" width="30" height="30" alt="Ярмарка &quot;Кубанская бахча &quot;">
+          <h2 class="article__image-info"> Сергей
+            <span class="article__time">(25 часов назад)</span>
+          </h2>
+          <p class="article__description">Самая кубанская в мире!</p>
+          <div class="article__like">
+            <div class="article__like-icon"></div>
+            <span class="article__like-count">Нравится: 4</span>
+          </div>
+        </li>
+        <li class="users-pics__item article">
+          <img class="article__image" src="img-6.jpg" width="30" height="30" alt="Ноги сидящего на горе человека">
+          <h2 class="article__image-info"> Максим
+            <span class="article__time">(40 часов назад)</span>
+          </h2>
+          <p class="article__description">Где снег-то?</p>
+          <div class="article__like">
+            <div class="article__like-icon"></div>
+            <span class="article__like-count">Нравится: 150</span>
+          </div>
+        </li>
+        <li class="users-pics__item article">
+          <img class="article__image" src="img-7.jpg" width="30" height="30" alt="Крыло самолета на рассвете">
+          <h2 class="article__image-info"> Надежда
+            <span class="article__time">(45 часов назад)</span>
+          </h2>
+          <p class="article__description">Всем GM и взаимные лайки!</p>
+          <div class="article__like">
+            <div class="article__like-icon"></div>
+            <span class="article__like-count">Нравится: 2560</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <a class="main-footer__logo logo">
+      <img class="logo__img" src="header-logo.svg" alt="Логотип приложения Пинк" width="75" height="22">
+    </a>
+    <ul class="socials-list">
+      <li class="socials-list__item">
+        <a href=""><span class="visually-hidden">Twitter</span></a>
+      </li>
+      <li class="socials-list__item">
+        <a href=""><span class="visually-hidden">Facebook</span></a>
+      </li>
+      <li class="socials-list__item">
+        <a href=""><span class="visually-hidden">Youtube</span></a>
+      </li>
+    </ul>
+    <p class="developed-by">
+      <b class="developed-by-left">Разработано —</b>
+
+      <a class="developed-by-right" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">htmlacademy.ru</span></a>
+
+    </p>
+  </footer>
+</body>
+
+</html>
