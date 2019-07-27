@@ -2,21 +2,36 @@
   padding: 20px 0;
 }
 
-.main-nav__item {
-  background-color: @navy;
+.main-header__container {
+  display: flex;
+  flex-direction: column;
 }
 
-.main-nav__item a {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: bold;
-  color: @white;
-  text-transform: uppercase;
-  text-decoration: none;
+.main-header__logo {
+  height: 71px;
 }
 
-.main-nav__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+@media (min-width: @tablet-width) {
+  .main-header {
+    min-height: 110px;
+  }
+
+  .main-header__logo {
+    height: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    min-height: 110px;
+  }
+
+  .main-header__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    margin: 0 auto;
+  }
 }
