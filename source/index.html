@@ -3,146 +3,140 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пинк: Главная</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
-
-  <head>
-    <meta charset="utf-8">
-    <title>Пинк: Главная</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
-  </head>
-
-  <body>
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo logo">
-          <img class="logo__img" src="header__logo.svg" alt="Логотип приложения Пинк" width="75" height="22">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a>Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <h1 class="visually-hidden">Сайт приложения для обработки фотографий "Pink"</h1>
-      <section class="download-app">
-        <img class="download-app__img" src="img.jpg" alt="смартфон с установленным приложением в руке">
-        <div class="download-app__wrapper background-header">
-          <h2 class="download-app__header">Взгляните на жизнь иначе!</h2>
-          <div class="download-app__links">
-            <a class="download-app__btn" href="https://www.apple.com/itunes/">Скачать приложение</a>
-            <ul class="download-app__list">
-              <li class="download-app__item">
-                <a class="download-app__apple" href="https://www.apple.com/itunes/">Itunes</a>
-              </li>
-              <li class="download-app__item">
-                <a class="download-app__android" href="https://www.play.google.com">Google Play</a>
-              </li>
-              <li class="download-app__item">
-                <a class="download-app__windows" href="https://www.microsoft.com/ru-RU/store/apps">Microsoft Store</a>
-              </li>
-            </ul>
-            <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
-        </div>
-      </section>
-      <section class="app-features">
-        <div class="app-features__wrapper">
-          <p class="app-features__header">
-            <b>Устали от серости мегаполиса?</b>
-            <b>Нам есть, что вам предложить!</b>
-          </p>
-          <ul class="app-features__list">
-            <li class="app-features__item">
-              <img class="app-features__img" src="img.jpg" alt="alt">
-              <h2 class="app-features__heading">Поднимает настроение</h2>
-              <p class="app-features__paragraph">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="app-features__item">
-              <img class="app-features__img" src="img.jpg" alt="alt">
-              <h2 class="app-features__heading">Меняет мир вокруг</h2>
-              <p class="app-features__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="app-features__item">
-              <img class="app-features__img" src="app-features.jpg" alt="Iphone со смайликом и текстом: &quot;Всем привет!&quot">
-              <h2 class="app-features__heading">Заводит новых друзей</h2>
-              <p class="app-features__paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <div class="research">
-            <div class="research__container">
-              <h2 class="research__heading"> Эффект на 24 часа!</h2>
-              <p class="research__paragraph">
-                Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-              </p>
-              <a class="research__link" href="">Узнать больше об исследовании</a>
-            </div>
-          </div>
-      </section>
-      <section class="reviews">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <h3 class="reviews__author-name">Николай Петров</h3>
-            <p class="reviews__review-text">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo logo">
+        <img class="logo__img" src="header__logo.svg" alt="Логотип приложения Пинк" width="75" height="22">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
           </li>
         </ul>
-        <div class="reviews-buttons">
-          <button class="reviews-buttons__item"></button>
-          <button class="reviews-buttons__item"></button>
-          <button class="reviews-buttons__item"></button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Сайт приложения для обработки фотографий "Pink"</h1>
+    <section class="download-app">
+      <img class="download-app__img" src="img.jpg" alt="смартфон с установленным приложением в руке">
+      <div class="download-app__wrapper background-header">
+        <h2 class="download-app__header">Взгляните на жизнь иначе!</h2>
+        <div class="download-app__links">
+          <a class="download-app__btn" href="https://www.apple.com/itunes/">Скачать приложение</a>
+          <ul class="download-app__list">
+            <li class="download-app__item">
+              <a class="download-app__apple" href="https://www.apple.com/itunes/">Itunes</a>
+            </li>
+            <li class="download-app__item">
+              <a class="download-app__android" href="https://www.play.google.com">Google Play</a>
+            </li>
+            <li class="download-app__item">
+              <a class="download-app__windows" href="https://www.microsoft.com/ru-RU/store/apps">Microsoft Store</a>
+            </li>
+          </ul>
+          <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-      </section>
-      <section class="app-variations">
-        <h2 class="visually-hidden">Тарифы</h2>
-        <!-- Тарифы-->
-      </section>
-      <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <!-- Контакты -->
-      </section>
-    </main>
-    <footer class="main-footer">
-      <a class="main-footer__logo">
-        <img class="main-footer__logo-img" src="header-logo.svg" alt="Логотип приложения Пинк" width="75" height="22">
-      </a>
-      <ul class="socials-list">
-        <li class="socials-list__item">
-          <a href=""><span class="visually-hidden">Twitter</span></a>
-        </li>
-        <li class="socials-list__item">
-          <a href=""><span class="visually-hidden">Facebook</span></a>
-        </li>
-        <li class="socials-list__item">
-          <a href=""><span class="visually-hidden">Youtube</span></a>
+      </div>
+    </section>
+    <section class="app-features">
+      <div class="app-features__wrapper">
+        <p class="app-features__header">
+          <b>Устали от серости мегаполиса?</b>
+          <b>Нам есть, что вам предложить!</b>
+        </p>
+        <ul class="app-features__list">
+          <li class="app-features__item">
+            <img class="app-features__img" src="img.jpg" alt="alt">
+            <h2 class="app-features__heading">Поднимает настроение</h2>
+            <p class="app-features__paragraph">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="app-features__item">
+            <img class="app-features__img" src="img.jpg" alt="alt">
+            <h2 class="app-features__heading">Меняет мир вокруг</h2>
+            <p class="app-features__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="app-features__item">
+            <img class="app-features__img" src="app-features.jpg" alt="Iphone со смайликом и текстом: &quot;Всем привет!&quot">
+            <h2 class="app-features__heading">Заводит новых друзей</h2>
+            <p class="app-features__paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <div class="research">
+          <div class="research__container">
+            <h2 class="research__heading"> Эффект на 24 часа!</h2>
+            <p class="research__paragraph">
+              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="research__link" href="">Узнать больше об исследовании</a>
+          </div>
+        </div>
+    </section>
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <h3 class="reviews__author-name">Николай Петров</h3>
+          <p class="reviews__review-text">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
         </li>
       </ul>
-      <p class="developed-by">
-        <b class="developed-by-left">Разработано —</b>
-        <a class="developed-by-right" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">htmlacademy.ru</span></a>
-      </p>
-    </footer>
-  </body>
+      <div class="reviews-buttons">
+        <button class="reviews-buttons__item" aria-label="1 отзыв"></button>
+        <button class="reviews-buttons__item" aria-label="2 отзыв"></button>
+        <button class="reviews-buttons__item" aria-label="3 отзыв"></button>
+      </div>
+    </section>
+    <section class="app-variations">
+      <h2 class="visually-hidden">Тарифы</h2>
+      <!-- Тарифы-->
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <!-- Контакты -->
+    </section>
+  </main>
+  <footer class="main-footer">
+    <a class="main-footer__logo">
+      <img class="main-footer__logo-img" src="header-logo.svg" alt="Логотип приложения Пинк" width="75" height="22">
+    </a>
+    <ul class="socials-list">
+      <li class="socials-list__item">
+        <a href=""><span class="visually-hidden">Twitter</span></a>
+      </li>
+      <li class="socials-list__item">
+        <a href=""><span class="visually-hidden">Facebook</span></a>
+      </li>
+      <li class="socials-list__item">
+        <a href=""><span class="visually-hidden">Youtube</span></a>
+      </li>
+    </ul>
+    <p class="developed-by">
+      <b class="developed-by-left">Разработано —</b>
+      <a class="developed-by-right" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">htmlacademy.ru</span></a>
+    </p>
+  </footer>
+</body>
 </body>
 
 </html>
