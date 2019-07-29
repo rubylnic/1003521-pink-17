@@ -1,8 +1,33 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  .box();
 }
 
 .socials-list {
   .list-prevent();
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: @tablet-c;
+    min-height: 175px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: @desktop-c;
+    min-height: 195px;
+    margin: 0 auto;
+  }
 }

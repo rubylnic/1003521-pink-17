@@ -1,0 +1,53 @@
+.article {
+  width: 280px;
+
+  background-color: @gray;
+}
+
+.article__author-name {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.article__time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.article__description {
+  margin: 0;
+}
+
+.article__like-count {
+  font-size: 12px;
+  line-height: 24px;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .panorama {
+    width: @tablet-width;
+    margin: 0 auto;
+  }
+
+  .panorama__info {
+    width: @tablet-c;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .panorama {
+    width: @desktop-width;
+  }
+
+  .panorama__info {
+    width: @desktop-c;
+    margin: 0 auto;
+  }
+}
