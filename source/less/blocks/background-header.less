@@ -1,32 +1,32 @@
 .background-header {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 0 0;
-  height: 170px;
-  width: @mobile-c;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: @mobile-c;
+  height: 170px;
+
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 0 0;
 }
 
 .background-header__text {
-  color: @white;
   font-size: 24px;
+  color: @white;
   font-weight: normal;
 }
 
 @media (min-width: @tablet-width) {
   .background-header {
-
     width: @tablet-c;
-    margin: 0 auto;
     height: 330px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .background-header {
     width: @desktop-c;
-    margin: 0 auto;
     height: 330px;
+    margin: 0 auto;
   }
 }

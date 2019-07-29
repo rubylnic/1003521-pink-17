@@ -1,10 +1,11 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
   min-height: 300px;
   padding-top: 40px;
   padding-bottom: 40px;
+
   .box();
-  display: flex;
-  flex-direction: column;
 }
 
 .socials-list {
@@ -13,20 +14,20 @@
 
 @media (min-width: @tablet-width) {
   .main-footer {
-    width: @tablet-c;
-    margin: 0 auto;
-    min-height: 175px;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
+    width: @tablet-c;
+    min-height: 175px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-footer {
-    width: @desktop-c;
-    margin: 0 auto;
-    min-height: 195px;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
+    width: @desktop-c;
+    min-height: 195px;
+    margin: 0 auto;
   }
 }

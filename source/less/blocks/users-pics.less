@@ -1,14 +1,15 @@
 .users-pics__description {
-  margin: 0;
-  padding: 50px 20px;
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 50px 20px;
 }
 
 .users-pics__list {
-  .list-prevent();
   display: flex;
   flex-direction: column;
+
+  .list-prevent();
 }
 
 @media (min-width: @tablet-width) {
@@ -18,11 +19,11 @@
   }
 
   .users-pics__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: @tablet-c;
     margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
 }
 
@@ -33,10 +34,10 @@
   }
 
   .users-pics__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: @desktop-c;
     margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
 }
