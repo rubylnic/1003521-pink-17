@@ -77,6 +77,9 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: @tablet-width;
+    margin: 0 auto;
+    margin-top: 50px;
   }
 
   .download-app .background-header {
@@ -86,11 +89,6 @@
 
   .download-app__img {
     position: absolute;
-  }
-
-  .download-app__wrapper {
-    width: @tablet-width;
-    margin: 0 auto;
   }
 
   .download-app__links {
@@ -108,10 +106,6 @@
     padding-left: 45px;
   }
 
-  .download-app__wrapper {
-    margin-top: 50px;
-  }
-
   .download-app__header {
     width: 200px;
     margin: 0;
@@ -123,7 +117,6 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .download-app .background-header {
     min-height: 900px;
     margin-top: -140px;
