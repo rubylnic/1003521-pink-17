@@ -1,11 +1,19 @@
 .main-nav {
-  width: 320px;
-  min-height: 255px;
+  width: auto;
   margin: 0 auto;
+
+  background-color: @navy;
 }
 
 .main-nav__item {
-  background-color: @navy;
+  padding: 15px 0;
+
+  border-top: solid 1px #485461;
+  border-bottom: solid 1px @black;
+}
+
+.main-nav__item:first-child {
+  box-shadow: 0 -1px 0 @black;
 }
 
 .main-nav__item a {
@@ -13,29 +21,129 @@
   line-height: 32px;
   color: @white;
   font-weight: bold;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  &[href]:hover {
+    color: @pink;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__list {
-  margin: 0;
+  width: @mobile-c;
+  margin: 0 auto;
   padding: 0;
 
+  text-align: center;
+
   list-style: none;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+
+  display: block;
+
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+  top: 20px;
+  right: 20px;
+
+  width: 50px;
+  height: 24px;
+
+  outline: none;
+  background: url("../img/icon-menu-burger-white.svg") no-repeat 0 0;
+
+  &:hover {
+    background: url("../img/icon-menu-burger-pink.svg") no-repeat 0 0;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 20px;
+  right: 20px;
+
+  width: 24px;
+  height: 24px;
+
+  outline: none;
+  background: url("../img/icon-menu-cross-white.svg") no-repeat 0 0;
+
+  &:hover {
+    background: url("../img/icon-menu-cross-pink.svg") no-repeat 0 0;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: @tablet-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
     width: auto;
-    min-height: 255px;
     margin: 0;
+  }
+
+  .main-nav__list {
+    width: @tablet-width;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
+    position: relative;
+
     display: flex;
     min-height: 110px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__item {
+    border: none;
+  }
+
+  .main-nav__item:first-child {
+    box-shadow: none;
+  }
+
+  .main-nav__item a {
+    font-weight: normal;
+    text-transform: none;
+
+    border: none;
+  }
+
+  .main-nav__item .main-nav__active {
+    padding-bottom: 8px;
+
+    border-bottom: solid white 2px;
   }
 
   .main-nav__list {

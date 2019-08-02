@@ -2,33 +2,43 @@
   display: none;
 }
 
-.research__heading {
-  margin: 0;
-
-  font-size: 30px;
-  line-height: 36px;
-  color: @black;
-}
-
-.research__paragraph {
-  margin: 0;
-}
-
-.research__link {
-  color: @pink;
-}
 
 @media (min-width: @tablet-width) {
   .research {
     display: block;
     width: @tablet-c;
-    min-height: 390px;
     margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 120px;
+
+    background-color: @white;
   }
 
   .research__container {
     width: 320px;
     margin-left: auto;
+  }
+
+  .research__heading {
+    width: 185px;
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-size: 30px;
+    line-height: 36px;
+    color: @black;
+  }
+
+  .research__paragraph {
+    width: 290px;
+    margin: 0;
+    margin-bottom: 5px;
+
+    line-height: 24px;
+  }
+
+  .research__link {
+    color: @pink;
   }
 }
 
@@ -38,10 +48,24 @@
     width: @desktop-c;
     min-height: 420px;
     margin: 0 auto;
+
+    background-color: @gray;
   }
 
   .research__container {
     width: 570px;
     margin-left: auto;
+  }
+
+  .research__paragraph {
+    width: 533px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
