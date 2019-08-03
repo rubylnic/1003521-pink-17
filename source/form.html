@@ -12,10 +12,14 @@
 <body>
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Пинк" width="75" height="23">
+      <a class="main-header__logo logo" href="index.html">
+        <picture>
+          <source media="(min-width:960px)" srcset="../img/logo-pink-white-desktop.svg">
+          <source media="(min-width:660px)" srcset="../img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Пинк" width="75" height="23">
+        </picture>
       </a>
-      <nav class="main-nav main-nav__closed">
+      <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -25,7 +29,7 @@
             <a href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__active">Конкурс</a>
+            <a class="main-nav--active">Конкурс</a>
           </li>
           <li class="main-nav__item">
             <a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
@@ -132,8 +136,11 @@
     </section>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo">
-          <img class="main-footer__logo-img" src="header-logo.svg" alt="Логотип приложения Пинк" width="75" height="22">
+        <a class="main-footer__logo" href="index.html">
+          <picture>
+            <source media="(min-width:960px)" srcset="../img/logo-pink-blue-desktop.svg">
+            <img src="../img/logo-pink-blue-mobile.svg" alt="Логотип приложения Пинк" width="155" height="45">
+          </picture>
         </a>
         <ul class="socials-list">
           <li class="socials-list__item">
@@ -150,7 +157,7 @@
           </li>
           <li class="socials-list__item">
             <a href="https://www.facebook.com/">
-              <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
                 <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
               </svg>
               <span class="visually-hidden">Facebook</span></a>

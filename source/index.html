@@ -10,17 +10,21 @@
 </head>
 
 <body>
-  <header class="main-header main-header--closed">
+  <header class="main-header main-header--opened">
     <div class="main-header__wrapper">
-      <a class="main-header__logo logo">
-        <img class="logo__img" src="header__logo.svg" alt="Логотип приложения Пинк" width="75" height="23">
+      <a class="main-header__logo logo" href="index.html">
+        <picture>
+          <source media="(min-width:960px)" srcset="../img/logo-pink-white-desktop.svg">
+          <source media="(min-width:660px)" srcset="../img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Пинк" width="75" height="23">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню">
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item">
-            <a class="main-nav__active">Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav--active">Главная</a>
           </li>
           <li class="main-nav__item">
             <a href="photo.html">Фотографии</a>
@@ -38,21 +42,28 @@
   <main>
     <h1 class="visually-hidden">Сайт приложения для обработки фотографий "Pink"</h1>
     <section class="download-app">
-      <img class="download-app__img" src="img.jpg" alt="смартфон с установленным приложением в руке">
       <div class="background-header">
         <div class="download-app__wrapper">
+          <picture>
+            <img class="download-app__img" src="../img/iphone-hand-mobile@1x.png" srcset="../img/iphone-hand-phone@2x.png 2x" width="320" alt="смартфон с установленным приложением в руке">
+          </picture>
           <h2 class="download-app__header">Взгляните на жизнь иначе!</h2>
           <div class="download-app__links">
             <a class="download-app__btn" href="https://www.apple.com/itunes/">Скачать приложение</a>
             <ul class="download-app__list">
               <li class="download-app__item">
-                <a class="download-app__apple" href="https://www.apple.com/itunes/">Itunes</a>
+                <a class="download-app__apple" href="https://www.apple.com/itunes/">
+                  <span class="visually-hidden">Itunes</span>
+                </a>
               </li>
               <li class="download-app__item">
-                <a class="download-app__android" href="https://www.play.google.com">Google Play</a>
+                <a class="download-app__android" href="https://www.play.google.com">
+                  <span class="visually-hidden">Google Play</span> </a>
               </li>
               <li class="download-app__item">
-                <a class="download-app__windows" href="https://www.microsoft.com/ru-RU/store/apps">Microsoft Store</a>
+                <a class="download-app__windows" href="https://www.microsoft.com/ru-RU/store/apps">
+                  <span class="visually-hidden">Microsoft Store</span>
+                </a>
               </li>
             </ul>
             <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
