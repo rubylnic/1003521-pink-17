@@ -61,7 +61,7 @@
 .article__info {
   display: flex;
   flex-wrap: wrap;
-  padding: 25px;
+  padding: 20px;
 
   background-color: @gray;
 }
@@ -75,17 +75,24 @@
 }
 
 .article__like {
-  display: flex;
-  align-items: center;
-}
+  position: relative;
+  font-size: 12px;
+  line-height: 24px;
+  padding-left: 30px;
+  color: @pink;
+  text-transform: uppercase;
 
-.article__like-icon {
-  margin-right: 20px;
-
-  svg {
-    fill: @pink;
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 3px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: url("../img/icon-heart.svg") no-repeat 0 0;
   }
 }
+
 
 .article__author-name {
   margin: 0;
@@ -103,12 +110,6 @@
   text-transform: uppercase;
 }
 
-.article__like-count {
-  font-size: 12px;
-  line-height: 24px;
-  color: @pink;
-  text-transform: uppercase;
-}
 
 @media (min-width: @tablet-width) {
   .article {
@@ -133,22 +134,21 @@
     width: 125px;
     margin: 0;
     margin-left: auto;
+
+    &::before {
+      left: 105px;
+      top: 5px;
+    }
   }
 
   .article__like {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-    margin-top: auto;
-
+    padding-left: 0;
     order: 1;
-  }
 
-  .article__like-icon {
-    margin-right: 0;
-
-    order: 2;
+    &::before {
+      top: 5px;
+      left: 230px;
+    }
   }
 
   .article__image-wrapper {
