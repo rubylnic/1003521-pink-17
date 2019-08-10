@@ -2,12 +2,8 @@
   position: relative;
 }
 
-.app-features__wrapper {
-  min-height: 1005px;
-}
-
-.app-features__img:nth-child(1),
-.app-features__img:nth-child(2) {
+.app-features__item:nth-of-type(1) .app-features__img,
+.app-features__item:nth-of-type(2) .app-features__img {
   display: none;
 }
 
@@ -16,7 +12,7 @@
   flex-direction: column;
   width: 215px;
   margin: 0 auto;
-  padding-top: 15px;
+  padding-top: 35px;
   padding-bottom: 15px;
 
   font-size: 24px;
@@ -27,41 +23,50 @@
 
 .app-features__header b {
   margin-top: 27px;
+
+  font-weight: normal;
 }
-
-.app-features::before {
-  position: absolute;
-  top: 165px;
-
-  width: @tablet-only;
-  height: 94px;
-
-  content: "";
-  background: url("../img/bg-triangle-white.svg") no-repeat 0 -25px;
-}
-
 
 .app-features__list {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 320px;
   margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 315px;
+  padding: 0;
+  padding-top: 95px;
 
+  list-style: none;
   background-color: #f2f2f2;
-
-  .list-prevent();
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -52px;
 }
 
+
 .app-features__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 265px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 
   text-align: center;
+
+  &:last-of-type {
+    margin-bottom: 0;
+
+
+
+    & .app-features__paragraph {
+      margin-bottom: 40px;
+    }
+  }
+
 }
 
 .app-features__heading {
@@ -72,6 +77,14 @@
   line-height: 24px;
   color: #000000;
   font-weight: bold;
+
+  order: 1;
+}
+
+.app-features__img {
+  height: 278px;
+
+  order: 3;
 }
 
 .app-features__paragraph {
@@ -80,6 +93,8 @@
   font-size: 14px;
   line-height: 24px;
   color: @navy;
+
+  order: 2;
 }
 
 @media (min-width: @tablet-width) {
@@ -91,21 +106,25 @@
 
   .app-features__header {
     width: 593px;
-    padding-top: 55px;
+    padding-top: 45px;
     padding-bottom: 30px;
 
     font-size: 40px;
     line-height: 50px;
   }
 
-  .app-features::before {
-    top: 230px;
-    left: 10px;
-  }
-
   .app-features__header b {
     width: 350px;
     margin: 0 auto;
+  }
+
+  .app-features__img {
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    width: 268px;
+    height: 481px;
   }
 
   .app-features__list {
@@ -115,8 +134,10 @@
     justify-content: space-between;
     width: @tablet-width;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 85px;
     padding-bottom: 0;
+
+    background-position: 0 -30px;
   }
 
   .app-features__paragraph {
@@ -124,6 +145,7 @@
   }
 
   .app-features__item {
+    display: block;
     width: 320px;
     margin: 0;
     margin-bottom: 35px;
@@ -131,17 +153,37 @@
 
     text-align: left;
   }
+
+  .app-features__item:last-of-type {
+    margin-bottom: 40px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .app-features__wrapper {
-    width: @desktop-c;
-    min-height: 950px;
-    margin: 0 auto;
+    width: 1200px;
+
+    background-color: @gray;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   .app-features::before {
     display: none;
+  }
+
+  .app-features__img {
+    top: 0;
+    left: -20px;
+
+    width: 292px;
+    height: 302px;
+    margin-bottom: 50px;
+  }
+
+  .app-features__item:nth-of-type(3) .app-features__img {
+    left: -10px;
   }
 
   .app-features__img:nth-child(1),
@@ -151,11 +193,10 @@
 
   .app-features__header {
     width: 760px;
-    padding-top: 55px;
-    padding-bottom: 170px;
+    padding-bottom: 80px;
 
     font-size: 50px;
-    line-height: 50px;
+    line-height: 60px;
   }
 
   .app-features b {
@@ -168,11 +209,22 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 940px;
+    width: 890px;
+    padding-top: 0;
+
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+
+    &::before {
+      display: none;
+    }
   }
 
   .app-features__item {
+    position: relative;
+
     width: 260px;
+    margin: 0;
   }
 
   .app-features__heading {
