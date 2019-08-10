@@ -1,10 +1,35 @@
 .article {
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .panorama {
-  width: @mobile-c;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 320px;
+
+  &::before {
+    position: absolute;
+    right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 35px;
+
+    font-size: 12px;
+    color: @white;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    content: "Панорама дня";
+    background-color: @pink;
+  }
 }
 
 .panorama__info {
@@ -18,7 +43,19 @@
 
 .panorama__image {
   width: 320px;
-  height: 137px;
+}
+
+.article__image-wrapper {
+  display: block;
+  width: 280px;
+  height: 180px;
+}
+
+.panorama__image-wrapper {
+  display: block;
+  width: auto;
+  height: 140px;
+  margin: 0 auto;
 }
 
 .article__info {
@@ -33,11 +70,21 @@
   width: 240px;
   margin: 0;
   margin-bottom: 5px;
+
+  line-height: 24px;
 }
 
 .article__like {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+
+.article__like-icon {
+  margin-right: 20px;
+
+  svg {
+    fill: @pink;
+  }
 }
 
 .article__author-name {
@@ -66,29 +113,77 @@
 @media (min-width: @tablet-width) {
   .article {
     width: 300px;
-    min-height: 325px;
+    height: 455px;
     margin: 0;
+    margin-bottom: 20px;
   }
 
   .article__description {
     width: 240px;
   }
 
-  .article__like {
+  .article__info {
+    min-height: 157px;
+    padding-left: 27px;
+
+    .box();
+  }
+
+  .panorama .article__like {
+    width: 125px;
+    margin: 0;
     margin-left: auto;
+  }
+
+  .article__like {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    margin-top: auto;
 
     order: 1;
   }
 
+  .article__like-icon {
+    margin-right: 0;
+
+    order: 2;
+  }
+
+  .article__image-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+
+  .panorama__image-wrapper {
+    width: 660px;
+    height: 510px;
+  }
+
   .panorama {
-    width: auto;
+    width: 660px;
     min-height: 630px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    &::before {
+      top: 60px;
+      right: 33px;
+    }
+  }
+
+  .panorama__image {
+    width: auto;
+    height: 510px;
     margin: 0 auto;
   }
 
   .panorama__info {
     width: @tablet-c;
+    min-height: 120px;
     margin: 0 auto;
+    padding: 20px;
   }
 
   .panorama__description {
@@ -100,12 +195,33 @@
 
 @media (min-width: @desktop-width) {
   .article {
-    min-height: 558px;
+    width: 300px;
+    height: 555px;
+    margin-bottom: 55px;
+  }
+
+  .article__image-wrapper {
+    width: 300px;
+    height: 400px;
   }
 
   .panorama {
-    width: auto;
+    width: 1200px;
     min-height: 602px;
+
+    &::before {
+      top: 55px;
+      right: 70px;
+    }
+
+    &__info {
+      min-height: 95px;
+    }
+  }
+
+  .panorama__image-wrapper {
+    width: auto;
+    height: 510px;
   }
 
   .panorama .article__info {
