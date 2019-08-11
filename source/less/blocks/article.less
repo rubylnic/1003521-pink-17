@@ -75,21 +75,28 @@
 }
 
 .article__like {
+  width: 125px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   position: relative;
   font-size: 12px;
   line-height: 24px;
-  padding-left: 30px;
   color: @pink;
   text-transform: uppercase;
 
-  &::before {
-    position: absolute;
-    content: "";
-    bottom: 3px;
-    left: 0;
-    width: 15px;
-    height: 15px;
+  &-button {
+    border: none;
+    width: 14px;
+    height: 14px;
+    display: block;
+    margin-right: 17px;
     background: url("../img/icon-heart.svg") no-repeat 0 0;
+    cursor: pointer;
+  }
+
+  &-count {
+    order: 1;
   }
 }
 
@@ -119,6 +126,19 @@
     margin-bottom: 20px;
   }
 
+  .article__like {
+    width: 245px;
+    justify-content: space-between;
+
+    &-count {
+      order: 0;
+    }
+
+    &-button {
+      margin-right: 0;
+    }
+  }
+
   .article__description {
     width: 240px;
   }
@@ -144,11 +164,6 @@
   .article__like {
     padding-left: 0;
     order: 1;
-
-    &::before {
-      top: 5px;
-      left: 230px;
-    }
   }
 
   .article__image-wrapper {
@@ -206,7 +221,7 @@
   }
 
   .panorama {
-    width: 1200px;
+    width: auto;
     min-height: 602px;
 
     &::before {
