@@ -75,13 +75,28 @@
     display: block;
     width: @desktop-c;
     min-height: 420px;
+    padding-top: 100px;
     margin: 0 auto;
 
     background-color: @gray;
+
+    &::before {
+      width: 300px;
+      height: 350px;
+      background-size: 300px 350px;
+    }
+
+    &::after {
+      top: 90px;
+      left: 22px;
+      font-size: 120px;
+      border: 18px solid @pink;
+      padding: 90px 40px;
+    }
   }
 
   .research__container {
-    width: 570px;
+    width: 560px;
     margin-left: auto;
   }
 
@@ -90,10 +105,16 @@
 
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 30px
   }
 
   .research__link {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .research__heading {
+    margin-bottom: 20px;
+    width: 315px;
   }
 }
