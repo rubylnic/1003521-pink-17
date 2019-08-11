@@ -1,0 +1,67 @@
+.contest-form {
+  margin: 0 auto;
+  padding-bottom: 18px;
+}
+
+.contest-form__label,
+.contest-form__legend {
+  line-height: 30px;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.contest-form__label_navy {
+  color: @navy;
+  text-transform: none;
+}
+
+.contest-description {
+  margin: 0;
+}
+
+.fieldset {
+  border: none;
+}
+
+.fieldset ul {
+  .list-prevent();
+}
+
+.fieldset input::placeholder,
+.fieldset textarea::placeholder {
+  color: @black;
+}
+
+.fieldset input::-moz-placeholder,
+.fieldset textarea::-moz-placeholder {
+  color: @black;
+
+  opacity: 1;
+}
+
+.fielset input:-ms-input-placeholder,
+.fielset textarea:-ms-input-placeholder {
+  color: @black;
+}
+
+.grey-fielset {
+  background-color: @gray;
+}
+
+.submit {
+  font-size: 18px;
+  line-height: 30px;
+  color: @white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contest-form__required-fields {
+  margin: 0;
+
+  text-transform: uppercase;
+}
+
+.contest-form__required-fields sup {
+  color: @pink;
+}
