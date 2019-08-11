@@ -75,24 +75,27 @@
 }
 
 .article__like {
-  width: 125px;
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  position: relative;
+  width: 125px;
+
   font-size: 12px;
   line-height: 24px;
   color: @pink;
   text-transform: uppercase;
 
   &-button {
-    border: none;
+    display: block;
     width: 14px;
     height: 14px;
-    display: block;
     margin-right: 17px;
-    background: url("../img/icon-heart.svg") no-repeat 0 0;
+
     cursor: pointer;
+    border: none;
+    background: url("../img/icon-heart.svg") no-repeat 0 0;
   }
 
   &-count {
@@ -127,8 +130,12 @@
   }
 
   .article__like {
-    width: 245px;
     justify-content: space-between;
+    width: 245px;
+    padding-left: 0;
+
+    order: 1;
+
 
     &-count {
       order: 0;
@@ -156,14 +163,9 @@
     margin-left: auto;
 
     &::before {
-      left: 105px;
       top: 5px;
+      left: 105px;
     }
-  }
-
-  .article__like {
-    padding-left: 0;
-    order: 1;
   }
 
   .article__image-wrapper {

@@ -2,7 +2,6 @@
   display: none;
 }
 
-
 @media (min-width: @tablet-width) {
   .research {
     position: relative;
@@ -16,29 +15,32 @@
     background-color: @white;
 
     &::before {
-      top: 12px;
       position: absolute;
+      top: 12px;
 
       width: 240px;
       height: 280px;
 
       content: "";
+      opacity: 0.15;
       background: url("../img/icon-timer.svg") no-repeat 0 0;
       background-size: 240px 280px;
-      opacity: 0.15;
     }
 
     &::after {
       position: absolute;
-      content: "24";
-      font-size: 96px;
-      font-weight: bold;
-      color: @pink;
-      padding: 72px 31px;
-      border: solid 14px @pink;
-      border-radius: 50%;
       top: 70px;
       left: 20px;
+
+      padding: 72px 31px;
+
+      font-size: 96px;
+      color: @pink;
+      font-weight: bold;
+
+      content: "24";
+      border: solid 14px @pink;
+      border-radius: 50%;
     }
   }
 
@@ -75,23 +77,27 @@
     display: block;
     width: @desktop-c;
     min-height: 420px;
-    padding-top: 100px;
     margin: 0 auto;
+    padding-top: 100px;
 
     background-color: @gray;
 
     &::before {
       width: 300px;
       height: 350px;
+
       background-size: 300px 350px;
     }
 
     &::after {
       top: 90px;
       left: 22px;
-      font-size: 120px;
-      border: 18px solid @pink;
+
       padding: 90px 40px;
+
+      font-size: 120px;
+
+      border: 18px solid @pink;
     }
   }
 
@@ -102,10 +108,10 @@
 
   .research__paragraph {
     width: 533px;
+    margin-bottom: 30px;
 
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 30px
   }
 
   .research__link {
@@ -114,7 +120,7 @@
   }
 
   .research__heading {
-    margin-bottom: 20px;
     width: 315px;
+    margin-bottom: 20px;
   }
 }
