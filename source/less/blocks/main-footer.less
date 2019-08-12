@@ -20,6 +20,33 @@
   margin-bottom: 30px;
 }
 
+.main-footer__logo-img {
+  fill: @navy;
+
+  &:hover {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @navy;
+    opacity: 0.3;
+  }
+
+   #glasses {
+  fill: @pink;
+}
+}
+
+
+.main-footer__logo-mobile {
+  display: block;
+}
+
+
+.main-footer__logo-desktop {
+  display: none;
+}
+
 .main-footer__logo img {
   width: 150px;
 }
@@ -121,6 +148,14 @@
 
   .main-footer__logo {
     margin: 0;
+  }
+
+  .main-footer__logo-mobile {
+    display: none;
+  }
+
+  .main-footer__logo-desktop {
+    display: block;
   }
 
   .developed-by {
