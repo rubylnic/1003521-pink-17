@@ -14,15 +14,13 @@
   display: flex;
   align-items: center;
   height: 69px;
+  padding-left: 20px;
 
   text-align: left;
 
   background-color: @navy;
-}
 
-.main-header__logo {
   fill: @white;
-  padding-left: 20px;
 
 
   &[href]:hover .main-header__logo-img {
@@ -30,8 +28,9 @@
   }
 
   &[href]:active .main-header__logo-img {
-    fill: @white;
     opacity: 0.3;
+
+    fill: @white;
   }
 }
 
