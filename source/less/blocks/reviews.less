@@ -1,28 +1,120 @@
 .reviews {
   padding-top: 45px;
-  padding-bottom: 40px;
+  margin: 0 auto;
+  width: @mobile-c;
 
   background-color: @white;
 
-  @media (min-width: @tablet-width) {
-    width: @tablet-width;
+
+  &__list {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__author-name {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+
+  &__author-info {
+    display: none;
+  }
+
+  &__review-text {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0 20px;
+
+    font-size: 14px;
+    line-height: 30px;
+    color: @navy;
+  }
+
+  &-buttons {
+    width: 65px;
+    margin: 0 auto;
+  }
+
+  &-buttons__item {
+    padding: 0;
+    background-color: #dadddf;
+    width: 6px;
+    height: 6px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 15px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &--active {
+      background-color: @white;
+      border: solid 3px @navy;
+      width: 12px;
+      height: 12px;
+    }
   }
 }
 
-.reviews__list {
-  .list-prevent();
+@media (min-width: @tablet-width) {
+  .reviews {
+    width: @tablet-width;
+    padding-top: 5px;
+
+    &__list {
+      width: 620px;
+    }
+
+    &__review-text {
+      font-size: 18px;
+      width: 620px;
+      padding: 0;
+      order: 0;
+      margin-bottom: 30px;
+    }
+
+    &__author-name {
+      width: 620px;
+      order: 1;
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+
+    &__author-info {
+      display: block;
+      order: 1;
+      width: 620px;
+      margin-bottom: 25px;
+    }
+
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }
 
-.reviews__author-name {
-  margin: 0;
+@media (min-width: @desktop-width) {
+  .reviews {
+    width: @desktop-width;
+    padding-top: 190px;
 
-  color: #000000;
-}
+    &__author-name {
+      font-size: 24px;
+    }
 
-.reviews__review-text {
-  margin: 0;
-
-  font-size: 14px;
-  line-height: 30px;
-  color: @navy;
+    &__review-text {
+      width: 615px;
+    }
+  }
 }

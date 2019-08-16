@@ -1,0 +1,53 @@
+.map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 100px;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat center 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: @pink;
+    border: solid 10px @white;
+    bottom: 100px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    width: auto;
+
+    &::before {
+      width: 660px;
+      height: 150px;
+      background-position: center 0;
+    }
+
+    & img {
+      width: 660px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+
+    & img {
+      width: auto;
+    }
+
+    &::before {
+      width: 100%;
+    }
+  }
+}

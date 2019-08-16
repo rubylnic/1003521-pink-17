@@ -34,6 +34,12 @@
       </g>
       <path fill="#D22856" d="M50.686 16.125a4.499 4.499 0 01-4.499-4.499 4.499 4.499 0 01-4.499 4.499 4.499 4.499 0 014.499 4.499 4.498 4.498 0 014.499-4.499zM37.904 19.626a2.748 2.748 0 01-2.749-2.749 2.748 2.748 0 01-2.749 2.749 2.747 2.747 0 012.749 2.749 2.748 2.748 0 012.749-2.749zM10.734 34.072a2.748 2.748 0 01-2.749-2.75c0 1.52-1.23 2.75-2.749 2.75a2.747 2.747 0 012.749 2.748 2.748 2.748 0 012.749-2.748z" />
     </symbol>
+    <symbol id="icon-yes" width="35.698px" height="25.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve" fill="#3dc644">
+      <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+    </symbol>
+    <symbol id="icon-no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve" fill="#f25b26">
+      <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+    </symbol>
   </svg>
   <header class="main-header main-header--opened">
     <div class="main-header__wrapper">
@@ -168,24 +174,99 @@
       <ul class="reviews__list">
         <li class="reviews__item">
           <h3 class="reviews__author-name">Николай Петров</h3>
+          <span class="reviews__author-info"> 25 лет, водитель трамвая </span>
           <p class="reviews__review-text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
         </li>
       </ul>
       <div class="reviews-buttons">
-        <button class="reviews-buttons__item" aria-label="1 отзыв"></button>
+        <button class="reviews-buttons__item reviews-buttons__item--active" aria-label="1 отзыв"></button>
         <button class="reviews-buttons__item" aria-label="2 отзыв"></button>
         <button class="reviews-buttons__item" aria-label="3 отзыв"></button>
       </div>
     </section>
     <section class="app-variations">
       <h2 class="visually-hidden">Тарифы</h2>
-      <!-- Тарифы-->
+      <table class="app-variations__table">
+        <tr class="app-variations__table-row-1">
+          <td></td>
+          <td>
+            <h3>База</h3>
+            <span> 1,99 USD</span>
+          </td>
+          <td>
+            <div class="app-variations__flag-hit"></div>
+            <h3>Стандарт</h3>
+            <span> 3,99 USD</span>
+          </td>
+          <td>
+            <h3>Анлим</h3>
+            <span> 9,99 USD</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Розовый фильтр</td>
+          <td> <svg class="table-img" width="36" height="25">
+              <use xlink:href="#icon-yes"></use>
+            </svg></td>
+          <td> <svg class="table-img" width="36" height="25">
+              <use xlink:href="#icon-yes"></use>
+            </svg></td>
+          <td> <svg class="table-img" width="36" height="25">
+              <use xlink:href="#icon-yes"></use>
+            </svg></td>
+        </tr>
+        <tr>
+          <td>Смайлики</td>
+          <td> <svg class="table-img" width="36" height="26">
+              <use xlink:href="#icon-no"></use>
+            </svg></td>
+          <td> <svg class="table-img" width="36" height="25">
+              <use xlink:href="#icon-yes"></use>
+            </svg></td>
+          <td> <svg class="table-img" width="36" height="25">
+              <use xlink:href="#icon-yes"></use>
+            </svg></td>
+        </tr>
+        <tr>
+          <td>Комментарии</td>
+          <td> <svg class="table-img" width="36" height="26">
+              <use xlink:href="#icon-no"></use>
+            </svg></td>
+          <td> <svg class="table-img" width="36" height="26">
+              <use xlink:href="#icon-no"></use>
+            </svg></td>
+          <td> <svg class="table-img" width="36" height="26">
+              <use xlink:href="#icon-yes"></use>
+            </svg></td>
+        </tr>
+      </table>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <!-- Контакты -->
+      <p class="contacts__heading">Остались вопросы? Свяжитесь с нами!</p>
+      <div class="contacts-wrapper">
+        <p class="contacts__item">
+          <span class="contacts__item-1">Звоните:</span>
+          <span class="contacts__item-2">+7(812) 555-66-66</span>
+        </p>
+        <p class="contacts__item">
+          <span class="contacts__item-1">Пишите:</span>
+          <span class="contacts__item-2">mail@htmlacademy.ru</span>
+        </p>
+        <p class="contacts__item">
+          <span class="contacts__item-1">Приезжайте в гости:</span>
+          <span class="contacts__item-2">ул. Большая Конюшенная, 19/8</span>
+        </p>
+      </div>
+      <div class="map">
+        <picture>
+          <source media="(min-width:960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width:660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="ул.Большая Конюшенная, 19/8">
+        </picture>
+      </div>
     </section>
   </main>
 </body>
