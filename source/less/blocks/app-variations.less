@@ -1,43 +1,59 @@
 .app-variations {
-  background-color: #f2f2f2;
+  width: 280px;
   padding-top: 120px;
-  background-image: url(../img/bg-triangle-white.svg);
+
+  background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: 0 -20px;
 
   &__table {
+    position: relative;
+
+    display: flex;
+    overflow: hidden;
+    width: 320px;
+
+    color: @navy;
+    text-transform: uppercase;
 
     border-collapse: collapse;
-    text-transform: uppercase;
     background-color: @white;
-    color: @navy;
+
+    flex: 1 0;
   }
 
   td {
     position: relative;
+
+    min-width: 210px;
+    padding: 20px 0 20px 10px;
+
+    text-align: left;
+
     border: solid 2px #e5e5e5;
-    min-width: 280px;
-    text-align: center;
-    padding: 20px 0;
   }
 
   &__table-row-1 {
-    background-color: @navy;
     color: @white;
 
+    background-color: @navy;
+
     & td:first-of-type {
-      background-color: #f2f2f2;
       border: none;
+      background-color: #f2f2f2;
     }
 
-     & h3 {
+    & h3 {
       margin: 0;
-      text-transform: uppercase;
+
       font-size: 16px;
+      text-transform: uppercase;
     }
 
     & span {
       display: block;
+
       font-size: 24px;
       font-weight: 200;
     }
@@ -45,34 +61,39 @@
 
   &__flag-hit {
     position: absolute;
+    top: 0;
+
     width: 61px;
     height: 61px;
-    background: url("../img/bg-hit-tablet.svg") no-repeat 0 0;
-    top:0;
 
-    &:before {
+    background: url("../img/bg-hit-tablet.svg") no-repeat 0 0;
+
+    &::before {
       position: absolute;
-      display: block;
-      content:"хит";
-      text-transform: uppercase;
-      transform: rotate(-43deg);
-      right: 27px;
       top: 3px;
+      right: 27px;
+
+      display: block;
+
+      text-transform: uppercase;
+
+      content: "хит";
+      transform: rotate(-43deg);
     }
   }
 }
 
 @media (min-width: @tablet-width) {
   .app-variations {
-
     width: @tablet-width;
     margin: 0 auto;
     padding-top: 100px;
 
     &__table {
-      text-transform: none;
       width: 620px;
       margin: 0 auto;
+
+      text-transform: none;
     }
 
     &__table-row-1 span {
@@ -81,24 +102,32 @@
 
     td {
       min-width: 155px;
+      padding: 10px 0;
+
+      text-align: center;
     }
   }
 
   &__flag-hit {
     position: absolute;
+
     width: 74px;
     height: 73px;
+
     background: url("../img/bg-hit.svg") no-repeat 0 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .app-variations {
-
     width: auto;
+
     &__table {
       width: 940px;
     }
+
+    & td {
+      width: 235px;
+    }
   }
 }
-

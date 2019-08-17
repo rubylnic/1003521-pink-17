@@ -1,39 +1,62 @@
 .map {
   position: relative;
+  top: 10px;
+
   display: flex;
+  overflow: hidden;
   justify-content: center;
+  height: 205px;
+
+  &__image {
+    position: relative;
+    top: -445px;
+  }
+
 
   &::before {
-    content: "";
     position: absolute;
+    z-index: 2;
+
     width: 320px;
     height: 100px;
+
+    content: "";
     background: url("../img/bg-triangle-white-footer.svg") no-repeat center 0;
   }
 
   &::after {
-    content: "";
     position: absolute;
+    bottom: 80px;
+
     width: 15px;
     height: 15px;
+
+    content: "";
+    border: solid 10px @white;
     border-radius: 50%;
     background-color: @pink;
-    border: solid 10px @white;
-    bottom: 100px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .map {
     width: auto;
+    height: 380px;
 
     &::before {
       width: 660px;
       height: 150px;
+
       background-position: center 0;
     }
 
-    & img {
+    &::after {
+      bottom: 140px;
+    }
+
+    &__image {
+      top: -300px;
+
       width: 660px;
     }
   }
@@ -41,8 +64,11 @@
 
 @media (min-width: @desktop-width) {
   .map {
+    height: 505px;
 
-    & img {
+    &__image {
+      top: -200px;
+
       width: auto;
     }
 
