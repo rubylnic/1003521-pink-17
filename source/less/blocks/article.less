@@ -1,7 +1,27 @@
 .article {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
+}
+
+.article__tag {
+  position: absolute;
+  right: 20px;
+
+  width: 140px;
+  padding: 5px 0;
+
+  font-size: 12px;
+  color: @white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: @pink;
+
+  @media (min-width: @tablet-width) {
+    top: 55px;
+  }
 }
 
 .panorama {
@@ -11,25 +31,6 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 320px;
-
-  &::before {
-    position: absolute;
-    right: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 140px;
-    height: 35px;
-
-    font-size: 12px;
-    color: @white;
-    font-weight: bold;
-    text-transform: uppercase;
-
-    content: "Панорама дня";
-    background-color: @pink;
-  }
 }
 
 .panorama__info {
@@ -52,6 +53,8 @@
 }
 
 .panorama__image-wrapper {
+  position: relative;
+
   display: block;
   width: auto;
   height: 140px;
@@ -61,6 +64,7 @@
 .article__info {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
   padding: 20px;
 
   background-color: @gray;
@@ -69,7 +73,7 @@
 .article__description {
   width: 240px;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 
   line-height: 24px;
 }
@@ -80,7 +84,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 125px;
+  width: 130px;
 
   font-size: 12px;
   line-height: 24px;
@@ -92,6 +96,7 @@
     width: 14px;
     height: 14px;
     margin-right: 17px;
+    padding: 0;
 
     cursor: pointer;
     border: none;
@@ -151,7 +156,7 @@
   }
 
   .article__info {
-    min-height: 157px;
+    height: 157px;
     padding-left: 27px;
 
     .box();
@@ -198,9 +203,8 @@
 
   .panorama__info {
     width: @tablet-c;
-    min-height: 120px;
-    margin: 0 auto;
-    padding: 20px;
+    height: 120px;
+    padding: 25px;
   }
 
   .panorama__description {
@@ -223,6 +227,8 @@
   }
 
   .panorama {
+    position: static;
+
     width: auto;
     min-height: 602px;
 
@@ -232,7 +238,7 @@
     }
 
     &__info {
-      min-height: 95px;
+      height: 95px;
     }
   }
 
