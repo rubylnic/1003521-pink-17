@@ -123,8 +123,8 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
-    width: @desktop-width;
-    padding-top: 190px;
+    width: 940px;
+    padding-top: 180px;
 
     background: url("../img/icon-quotes.svg") no-repeat center 50px;
 
@@ -133,7 +133,13 @@
     }
 
     &__author-name {
+      width: 690px;
       font-size: 24px;
+    }
+
+    &__author-info {
+      width: 690px;
+      font-size: 18px;
     }
 
     &__review-text {
@@ -169,6 +175,7 @@
         background-color: rgba(0, 0, 0, 0);
 
         &:hover {
+
           &::before,
           &::after {
             opacity: 1;
@@ -176,6 +183,7 @@
         }
 
         &:active {
+
           &::before,
           &::after {
             opacity: 0.1;
@@ -227,6 +235,7 @@
 
         &:hover,
         &:focus {
+
           &::before,
           &::after {
             opacity: 1;
@@ -234,6 +243,7 @@
         }
 
         &:active {
+
           &::before,
           &::after {
             opacity: 0.1;
@@ -243,7 +253,7 @@
         &::before {
           position: absolute;
           bottom: 10px;
-          left: 0;
+          right: 0;
 
           width: 30px;
           height: 2px;
@@ -257,7 +267,7 @@
         &::after {
           position: absolute;
           top: 13px;
-          left: 0;
+          right: 0;
 
           width: 30px;
           height: 2px;

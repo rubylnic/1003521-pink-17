@@ -10,6 +10,7 @@
 
   &__table {
     position: relative;
+    width: 320px;
 
     display: flex;
     overflow: hidden;
@@ -20,8 +21,6 @@
 
     border-collapse: collapse;
     background-color: @white;
-
-    flex: 1 0;
 
     & tbody {
       transform: translateX(-260px);
@@ -142,7 +141,9 @@
   .app-variations {
     width: @tablet-width;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 160px;
+    padding-bottom: 60px;
+    margin-bottom: 10px;
 
     &__buttons {
       display: none;
@@ -210,6 +211,8 @@
 @media (min-width: @desktop-width) {
   .app-variations {
     width: auto;
+    padding-bottom: 95px;
+    margin-bottom: 30px;
 
     &__table {
       width: 940px;
@@ -217,6 +220,25 @@
 
     & td {
       width: 235px;
+      font-size: 18px;
+      padding: 13px;
+    }
+
+    &__table-row-1 td {
+      padding: 20px;
+    }
+
+    & .app-variations--no-mobile {
+      padding: 13px;
+      padding-left: 20px;
+    }
+
+    &__table-row-1 h3 {
+      font-size: 18px;
+    }
+
+    &__table-row-1 span {
+      font-size: 24px;
     }
   }
 }
