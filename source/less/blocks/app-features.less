@@ -12,7 +12,7 @@
   flex-direction: column;
   width: 215px;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 45px;
   padding-bottom: 15px;
 
   font-size: 24px;
@@ -118,7 +118,7 @@
   .app-features__img {
     position: absolute;
     top: 10px;
-    left: 15px;
+    left: 10px;
 
     width: 268px;
     height: 481px;
@@ -144,13 +144,14 @@
 
   .app-features__item {
     display: block;
-    width: 320px;
+    width: 330px;
     margin: 0;
     margin-bottom: 35px;
     margin-left: auto;
 
     text-align: left;
   }
+
   .app-features__item:last-of-type .app-features__paragraph {
     margin-bottom: 0;
   }
@@ -175,7 +176,7 @@
 
     width: 292px;
     height: 302px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .app-features__item:nth-of-type(3) .app-features__img {
@@ -189,8 +190,8 @@
 
   .app-features__header {
     width: 760px;
+    padding-top: 50px;
     padding-bottom: 80px;
-    padding-top: 60px;
 
     font-size: 50px;
     line-height: 60px;
@@ -207,11 +208,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 890px;
+    margin-bottom: 30px;
     padding-top: 0;
 
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    margin-bottom: 30px;
 
     &::before {
       display: none;
@@ -220,12 +221,14 @@
 
   .app-features__item {
     position: relative;
+
     width: 230px;
     margin: 0;
   }
 
   .app-features__heading {
     width: 230px;
+    margin-bottom: 20px;
 
     font-size: 30px;
     line-height: 30px;
@@ -238,5 +241,9 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+
+    & br {
+      display: none;
+    }
   }
 }

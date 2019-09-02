@@ -65,6 +65,10 @@
     margin-bottom: 10px;
 
     line-height: 24px;
+
+    & br {
+      display: none;
+    }
   }
 
   .research__link {
@@ -77,11 +81,13 @@
     display: block;
     width: @desktop-c;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 90px;
 
     background-color: @gray;
 
     &::before {
+      top: 0;
+
       width: 300px;
       height: 350px;
 
@@ -89,7 +95,7 @@
     }
 
     &::after {
-      top: 90px;
+      top: 70px;
       left: 22px;
 
       padding: 90px 40px;
@@ -121,5 +127,9 @@
   .research__heading {
     width: 315px;
     margin-bottom: 20px;
+
+    & br {
+      display: none;
+    }
   }
 }

@@ -3,7 +3,7 @@
 
   width: @mobile-c;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 45px;
 
   background-color: @white;
 
@@ -44,14 +44,14 @@
   }
 
   &-buttons {
-    width: 65px;
+    width: 70px;
     margin: 0 auto;
   }
 
   &-buttons__item {
     width: 12px;
     height: 12px;
-    margin-right: 7px;
+    margin-right: 8px;
     padding: 0;
 
     cursor: pointer;
@@ -125,6 +125,7 @@
   .reviews {
     width: 940px;
     padding-top: 180px;
+    padding-bottom: 10px;
 
     background: url("../img/icon-quotes.svg") no-repeat center 50px;
 
@@ -134,11 +135,13 @@
 
     &__author-name {
       width: 690px;
+
       font-size: 24px;
     }
 
     &__author-info {
       width: 690px;
+
       font-size: 18px;
     }
 
@@ -175,7 +178,6 @@
         background-color: rgba(0, 0, 0, 0);
 
         &:hover {
-
           &::before,
           &::after {
             opacity: 1;
@@ -183,7 +185,6 @@
         }
 
         &:active {
-
           &::before,
           &::after {
             opacity: 0.1;
@@ -235,7 +236,6 @@
 
         &:hover,
         &:focus {
-
           &::before,
           &::after {
             opacity: 1;
@@ -243,7 +243,6 @@
         }
 
         &:active {
-
           &::before,
           &::after {
             opacity: 0.1;
@@ -252,8 +251,8 @@
 
         &::before {
           position: absolute;
-          bottom: 10px;
           right: 0;
+          bottom: 10px;
 
           width: 30px;
           height: 2px;

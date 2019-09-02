@@ -135,7 +135,7 @@
       <div class="background-header">
         <div class="download-app__wrapper">
           <picture class="download-app__img">
-             <source type="image/webp" media="(min-width:960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width:960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
             <source media="(min-width:960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
@@ -198,7 +198,7 @@
               <img src="img/iphone-screen-2-tablet@1x.png" srcset="img/iphone-screen-2-tablet@2x.png 2x" alt="Iphone с розовым изображением на экране">
             </picture>
             <h2 class="app-features__heading">Меняет мир вокруг</h2>
-            <p class="app-features__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="app-features__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br>усилить эффект</p>
           </li>
           <li class="app-features__item">
             <picture class="app-features__img">
@@ -215,9 +215,9 @@
         </ul>
         <div class="research">
           <div class="research__container">
-            <h2 class="research__heading"> Эффект на 24 часа!</h2>
+            <h2 class="research__heading"> Эффект <br> на 24 часа!</h2>
             <p class="research__paragraph">
-              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+              Британские ученые провели исследования и доказали, <br> что положительный эффект от использования приложения длится целые сутки!
             </p>
             <a class="research__link" href="">Узнать больше об исследовании</a>
           </div>
@@ -247,13 +247,13 @@
       <h2 class="visually-hidden">Тарифы</h2>
       <table class="app-variations__table">
         <tr class="app-variations__table-row-1">
-          <td class="app-variations--no-mobile"></td>
+          <td class="app-variations__table-cell--no-mobile"></td>
           <td>
             <h3>База</h3>
             <span> 1,99 USD</span>
           </td>
           <td>
-            <div class="app-variations__flag-hit"></div>
+            <div class="app-variations__flag"> <span class="flag-hit">хит</span></div>
             <h3>Стандарт</h3>
             <span> 3,99 USD</span>
           </td>
@@ -266,20 +266,20 @@
           <td class="app-variations--no-mobile">Розовый фильтр</td>
           <td>
             <span class="app-variations--mobile">Розовый фильтр</span>
-            <svg class="app-variations__table-img" width="36" height="25" labelledby="no-pink">
+            <svg class="app-variations__table-img" width="36" height="25" aria-labelledby="no-pink">
               <title id="no-pink">Розовый фильтр есть</title>
               <use xlink:href="#icon-yes"></use>
             </svg></td>
           <td>
             <span class="app-variations--mobile">Розовый фильтр</span>
-            <svg class="app-variations__table-img" width="36" height="25" labelledby="yes-pink">
+            <svg class="app-variations__table-img" width="36" height="25" aria-labelledby="yes-pink">
               <title id="yes-pink">Розовый фильтр есть</title>
               <use xlink:href="#icon-yes"></use>
             </svg></td>
           <td>
             <span class="app-variations--mobile">Розовый фильтр</span>
-            <svg class="app-variations__table-img" width="36" height="25" labelled-by="yes-pink">
-              <title id="yes-pink">Розовый фильтр есть</title>
+            <svg class="app-variations__table-img" width="36" height="25" aria-labelledby="yes-pink1">
+              <title id="yes-pink1">Розовый фильтр есть</title>
               <use xlink:href="#icon-yes"></use>
             </svg></td>
         </tr>
@@ -292,32 +292,32 @@
               <use xlink:href="#icon-no"></use>
             </svg></td>
           <td> <span class="app-variations--mobile">Смайлики</span>
-            <svg class="app-variations__table-img" width="36" height="25" labelled-by="smile-yes">
+            <svg class="app-variations__table-img" width="36" height="25" aria-labelledby="smile-yes">
               <title id="smile-yes">Смайлики есть</title>
               <use xlink:href="#icon-yes"></use>
             </svg></td>
           <td>
             <span class="app-variations--mobile">Смайлики</span>
-            <svg class="app-variations__table-img" width="36" height="25" labelled-by="smile-yes">
-              <title id="smile-yes">Смайлики есть</title>
+            <svg class="app-variations__table-img" width="36" height="25" aria-labelledby="smile-yes1">
+              <title id="smile-yes1">Смайлики есть</title>
               <use xlink:href="#icon-yes"></use>
             </svg></td>
         </tr>
         <tr>
           <td class="app-variations--no-mobile">Комментарии</td>
           <td> <span class="app-variations--mobile">Комментарии</span>
-            <svg class="app-variations__table-img" width="36" height="26" labelled-by="comments-no">
-              <title>Комментариев нет</title>
+            <svg class="app-variations__table-img" width="36" height="26" aria-labelledby="comments-no">
+              <title id="comments-no">Комментариев нет</title>
               <use xlink:href="#icon-no"></use>
             </svg></td>
           <td> <span class="app-variations--mobile">Комментарии</span>
-            <svg class="app-variations__table-img" width="36" height="26" labelled-by="comments-no">
-              <title>Комментариев нет</title>
+            <svg class="app-variations__table-img" width="36" height="26" aria-labelledby="comments-no1">
+              <title id="comments-no1">Комментариев нет</title>
               <use xlink:href="#icon-no"></use>
             </svg></td>
           <td> <span class="app-variations--mobile">Комментарии</span>
-            <svg class="app-variations__table-img" width="36" height="26" labelled-by="comments-yes">
-              <title>Комментарии есть</title>
+            <svg class="app-variations__table-img" width="36" height="26" aria-labelledby="comments-yes">
+              <title id="comments-yes">Комментарии есть</title>
               <use xlink:href="#icon-yes"></use>
             </svg></td>
         </tr>
@@ -348,9 +348,9 @@
       <div class="map">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1d5b822b01bade2f80b5c93e329f4905261599d59b4b752697db6311ee55bf22&amp;source=constructor" width="100%" height="510" frameborder="0"></iframe>
         <picture>
-          <source media="(min-width:960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-          <source media="(min-width:660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-          <source srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width:960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width:660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
           <source media="(min-width:960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
           <source media="(min-width:660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
           <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="ул.Большая Конюшенная, 19/8" width="320" height="200">

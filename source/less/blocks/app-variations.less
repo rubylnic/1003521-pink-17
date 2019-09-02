@@ -10,10 +10,10 @@
 
   &__table {
     position: relative;
-    width: 320px;
 
     display: flex;
     overflow: hidden;
+    width: 320px;
     margin-bottom: 25px;
 
     color: @navy;
@@ -23,6 +23,8 @@
     background-color: @white;
 
     & tbody {
+      display: block;
+
       transform: translateX(-260px);
     }
 
@@ -51,7 +53,7 @@
     background-color: @navy;
 
     & td {
-      padding: 20px 0 20px 10px;
+      padding: 18px 0 18px 10px;
     }
 
     & td:first-of-type {
@@ -76,7 +78,7 @@
     }
   }
 
-  &__flag-hit {
+  &__flag {
     position: absolute;
     top: 0;
     left: 0;
@@ -84,18 +86,22 @@
     width: 61px;
     height: 61px;
 
+    color: white;
+    text-transform: uppercase;
+
     background: url("../img/bg-hit-tablet.svg") no-repeat 0 0;
 
-    &::before {
+    & .flag-hit {
       position: absolute;
       top: 3px;
       right: 27px;
 
       display: block;
 
+      font-size: 14px;
+      color: white;
       text-transform: uppercase;
 
-      content: "хит";
       transform: rotate(-43deg);
     }
   }
@@ -132,7 +138,7 @@
 }
 
 @media (max-width: @tablet-width) {
-  .app-variations--no-mobile {
+  .app-variations__table-cell--no-mobile {
     display: none;
   }
 }
@@ -141,15 +147,17 @@
   .app-variations {
     width: @tablet-width;
     margin: 0 auto;
-    padding-top: 160px;
-    padding-bottom: 60px;
     margin-bottom: 10px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+
+    background-position: 0 -30px;
 
     &__buttons {
       display: none;
     }
 
-    &--mobile {
+    &__table-cell--no-mobile {
       display: none;
     }
 
@@ -190,7 +198,7 @@
       }
     }
 
-    & .app-variations--no-mobile {
+    & .app-variations__table-cell--no-mobile {
       padding-top: 0;
       padding-left: 15px;
 
@@ -211,24 +219,38 @@
 @media (min-width: @desktop-width) {
   .app-variations {
     width: auto;
-    padding-bottom: 95px;
     margin-bottom: 30px;
+    padding-top: 150px;
+    padding-bottom: 95px;
 
     &__table {
       width: 940px;
     }
 
+    &__flag {
+      width: 75px;
+      height: 75px;
+
+      background: url("../img/bg-hit.svg") no-repeat 0 0;
+
+      & .flag-hit {
+        top: 10px;
+        left: 10px;
+      }
+    }
+
     & td {
       width: 235px;
-      font-size: 18px;
       padding: 13px;
+
+      font-size: 18px;
     }
 
     &__table-row-1 td {
       padding: 20px;
     }
 
-    & .app-variations--no-mobile {
+    & .app-variations__table-cell--no-mobile {
       padding: 13px;
       padding-left: 20px;
     }
