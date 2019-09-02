@@ -16,6 +16,7 @@
 
     font-size: 24px;
     line-height: 30px;
+    font-weight: 300;
   }
 
   &__item {
@@ -29,7 +30,7 @@
     margin: 0;
 
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   &__item-2 {
@@ -39,24 +40,29 @@
 
     font-size: 24px;
     color: @pink;
+    font-weight: 300;
+    text-decoration: none;
   }
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
     width: 660px;
+    padding-bottom: 50px;
 
     &-wrapper {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      width: 620px;
       margin: 0 auto;
+      margin-bottom: 20px;
     }
 
     &__heading {
       width: 390px;
       margin: 0 auto;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
 
       font-size: 40px;
       line-height: 50px;
@@ -78,6 +84,8 @@
 
     &__item-2 {
       margin: 0 auto;
+
+      text-decoration: none;
     }
   }
 }
@@ -85,13 +93,19 @@
 @media (min-width: @desktop-width) {
   .contacts {
     width: auto;
+    padding-bottom: 80px;
 
     &-wrapper {
       width: 880px;
+      margin-bottom: 0;
     }
 
     &__heading {
       width: 470px;
+      margin-bottom: 55px;
+
+      font-size: 50px;
+      line-height: 55px;
     }
 
     &__item {
@@ -104,6 +118,10 @@
 
       &:last-of-type {
         width: 250px;
+      }
+
+      &-1 {
+        margin-bottom: 20px;
       }
     }
   }
