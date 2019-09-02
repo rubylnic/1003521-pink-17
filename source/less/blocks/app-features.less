@@ -92,6 +92,10 @@
   color: @navy;
 
   order: 2;
+
+  & br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -140,6 +144,10 @@
 
   .app-features__paragraph {
     width: 310px;
+
+    & br {
+      display: block;
+    }
   }
 
   .app-features__item {
