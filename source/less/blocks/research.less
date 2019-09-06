@@ -9,40 +9,41 @@
     display: block;
     width: @tablet-c;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 120px;
+    padding-top: 55px;
+    padding-bottom: 115px;
 
     background-color: @white;
-
-    &::before {
-      position: absolute;
-      top: 12px;
-
-      width: 240px;
-      height: 280px;
-
-      content: "";
-      opacity: 0.15;
-      background: url("../img/icon-timer.svg") no-repeat 0 0;
-      background-size: 240px 280px;
-    }
-
-    &::after {
-      position: absolute;
-      top: 70px;
-      left: 20px;
-
-      padding: 72px 31px;
-
-      font-size: 96px;
-      color: @pink;
-      font-weight: 700;
-
-      content: "24";
-      border: solid 14px @pink;
-      border-radius: 50%;
-    }
   }
+
+  .research::before {
+    position: absolute;
+    top: 12px;
+
+    width: 240px;
+    height: 280px;
+
+    content: "";
+    opacity: 0.15;
+    background: url("../img/icon-timer.svg") no-repeat 0 0;
+    background-size: 240px 280px;
+  }
+
+  .research::after {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+
+    padding: 72px 31px;
+
+    font-size: 96px;
+    color: @pink;
+    font-weight: 700;
+
+    content: "24";
+    border: solid 14px @pink;
+    border-radius: 50%;
+  }
+
 
   .research__container {
     width: 320px;
@@ -53,6 +54,7 @@
     width: 175px;
     margin: 0;
     margin-bottom: 10px;
+    padding-left: 5px;
 
     font-size: 30px;
     line-height: 36px;
@@ -84,27 +86,28 @@
     padding-top: 90px;
 
     background-color: @gray;
-
-    &::before {
-      top: 0;
-
-      width: 300px;
-      height: 350px;
-
-      background-size: 300px 350px;
-    }
-
-    &::after {
-      top: 70px;
-      left: 22px;
-
-      padding: 90px 40px;
-
-      font-size: 120px;
-
-      border: 18px solid @pink;
-    }
   }
+
+  .research::before {
+    top: 0;
+
+    width: 300px;
+    height: 350px;
+
+    background-size: 300px 350px;
+  }
+
+  .research::after {
+    top: 75px;
+    left: 22px;
+
+    padding: 90px 40px;
+
+    font-size: 120px;
+
+    border: 18px solid @pink;
+  }
+
 
   .research__container {
     width: 560px;
@@ -128,7 +131,7 @@
     width: 315px;
     margin-bottom: 20px;
 
-    & br {
+    br {
       display: none;
     }
   }

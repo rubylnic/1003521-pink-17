@@ -99,13 +99,13 @@
   <header class="main-header main-header--opened">
     <div class="main-header__wrapper">
       <a class="main-header__logo">
-        <svg class="main-header__logo-img main-header__logo-mobile" width="74.426" height="22.859">
+        <svg class="main-header__logo-img main-header__logo-img--mobile" width="74.426" height="22.859">
           <use xlink:href="#logo-white-mobile"></use>
         </svg>
-        <svg class="main-header__logo-img main-header__logo-tablet" width="146.3" height="40.375">
+        <svg class="main-header__logo-img main-header__logo-img--tablet" width="146.3" height="40.375">
           <use xlink:href="#logo-white-tablet"></use>
         </svg>
-        <svg class="main-header__logo-img main-header__logo-desktop" width="146.3" height="40.375">
+        <svg class="main-header__logo-img main-header__logo-img--desktop" width="146.3" height="40.375">
           <use xlink:href="#logo-white-desktop"></use>
         </svg>
       </a>
@@ -114,7 +114,7 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav--active">Главная</a>
+            <a class="main-nav__item-link main-nav__item-link--active">Главная</a>
           </li>
           <li class="main-nav__item">
             <a href="phot.html">Фотографии</a>
@@ -149,21 +149,21 @@
               <ul class="download-app__list">
                 <li class="download-app__item">
                   <a href="https://www.apple.com/itunes/" aria-label="iTunes">
-                    <svg>
+                    <svg width="45" height="56">
                       <use xlink:href="#itunes"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="download-app__item">
                   <a href="https://www.play.google.com" aria-label="Google Play">
-                    <svg>
+                    <svg width="45" height="51">
                       <use xlink:href="#google-play"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="download-app__item">
                   <a href="https://www.microsoft.com/ru-RU/store/apps" aria-label="Microsoft Store">
-                    <svg>
+                    <svg width="45" height="43">
                       <use xlink:href="#microsoft"></use>
                     </svg>
                   </a>
@@ -249,7 +249,7 @@
       <h2 class="visually-hidden">Тарифы</h2>
       <table class="app-variations__table">
         <tr class="app-variations__table-row-1">
-          <td class="app-variations__table-cell--no-mobile"></td>
+          <td class="app-variations__table-cell app-variations__table-cell--no-mobile"></td>
           <td>
             <h3>База</h3>
             <span> 1,99 USD</span>
@@ -265,59 +265,59 @@
           </td>
         </tr>
         <tr>
-          <td class="app-variations__table-cell--no-mobile">Розовый фильтр</td>
+          <td class="app-variations__table-cell app-variations__table-cell--no-mobile">Розовый фильтр</td>
           <td>
-            <span class="app-variations__table-cell--mobile">Розовый фильтр</span>
+            <span class="app-variations__table-cell app-variations__table-cell--mobile">Розовый фильтр</span>
             <svg class="app-variations__table-img" width="36" height="25" aria-labelledby="no-pink">
               <title id="no-pink">Розовый фильтр есть</title>
               <use xlink:href="#icon-yes"></use>
             </svg></td>
           <td>
-            <span class="app-variations__table-cell--mobile">Розовый фильтр</span>
+            <span class="app-variations__table-cell app-variations__table-cell--mobile">Розовый фильтр</span>
             <svg class="app-variations__table-img" width="36" height="25" aria-labelledby="yes-pink">
               <title id="yes-pink">Розовый фильтр есть</title>
               <use xlink:href="#icon-yes"></use>
             </svg></td>
           <td>
-            <span class="app-variations__table-cell--mobile">Розовый фильтр</span>
+            <span class="app-variations__table-cell app-variations__table-cell--mobile">Розовый фильтр</span>
             <svg class="app-variations__table-img" width="36" height="25" aria-labelledby="yes-pink1">
               <title id="yes-pink1">Розовый фильтр есть</title>
               <use xlink:href="#icon-yes"></use>
             </svg></td>
         </tr>
         <tr>
-          <td class="app-variations__table-cell--no-mobile">Смайлики</td>
+          <td class=" app-variations__table-cell app-variations__table-cell--no-mobile">Смайлики</td>
           <td>
-            <span class="app-variations__table-cell--mobile">Смайлики</span>
+            <span class="app-variations__table-cell app-variations__table-cell--mobile">Смайлики</span>
             <svg class="app-variations__table-img" width="36" height="26">
               <title id="no-smile">Смайликов нет</title>
               <use xlink:href="#icon-no"></use>
             </svg></td>
-          <td> <span class="app-variations__table-cell--mobile">Смайлики</span>
+          <td> <span class="app-variations__table-cell app-variations__table-cell--mobile">Смайлики</span>
             <svg class="app-variations__table-img" width="36" height="25" aria-labelledby="smile-yes">
               <title id="smile-yes">Смайлики есть</title>
               <use xlink:href="#icon-yes"></use>
             </svg></td>
           <td>
-            <span class="app-variations__table-cell--mobile">Смайлики</span>
+            <span class="app-variations__table-cell app-variations__table-cell--mobile">Смайлики</span>
             <svg class="app-variations__table-img" width="36" height="25" aria-labelledby="smile-yes1">
               <title id="smile-yes1">Смайлики есть</title>
               <use xlink:href="#icon-yes"></use>
             </svg></td>
         </tr>
         <tr>
-          <td class="app-variations__table-cell--no-mobile">Комментарии</td>
-          <td> <span class="app-variations__table-cell--mobile">Комментарии</span>
+          <td class="app-variations__table-cell app-variations__table-cell--no-mobile">Комментарии</td>
+          <td> <span class="app-variations__table-cell app-variations__table-cell--mobile">Комментарии</span>
             <svg class="app-variations__table-img" width="36" height="26" aria-labelledby="comments-no">
               <title id="comments-no">Комментариев нет</title>
               <use xlink:href="#icon-no"></use>
             </svg></td>
-          <td> <span class="app-variations__table-cell--mobile">Комментарии</span>
+          <td> <span class="app-variations__table-cell app-variations__table-cell--mobile">Комментарии</span>
             <svg class="app-variations__table-img" width="36" height="26" aria-labelledby="comments-no1">
               <title id="comments-no1">Комментариев нет</title>
               <use xlink:href="#icon-no"></use>
             </svg></td>
-          <td> <span class="app-variations__table-cell--mobile">Комментарии</span>
+          <td> <span class="app-variations__table-cell app-variations__table-cell--mobile">Комментарии</span>
             <svg class="app-variations__table-img" width="36" height="26" aria-labelledby="comments-yes">
               <title id="comments-yes">Комментарии есть</title>
               <use xlink:href="#icon-yes"></use>
@@ -362,7 +362,7 @@
   </main>
   <footer class="main-footer main-footer--index">
     <div class="main-footer__wrapper">
-      <a class="main-footer__logo logo">
+      <a class="main-footer__logo logo" href="index.html">
         <svg class="main-footer__logo-img main-footer__logo-mobile" width="146.3" height="40.375">
           <use xlink:href="#logo-blue-mobile"></use>
         </svg>
@@ -370,33 +370,33 @@
           <use xlink:href="#logo-blue-desktop"></use>
         </svg>
       </a>
-      <ul class="socials-list">
-        <li class="socials-list__item">
+      <ul class="main-footer__socials">
+        <li class="main-footer__socials-item">
           <a href="https://www.twitter.com/" aria-label="Twitter">
-            <svg>
+            <svg width="16" height="13.41">
               <use xlink:href="#twitter"></use>
             </svg>
           </a>
         </li>
-        <li class="socials-list__item">
+        <li class="main-footer__socials-item">
           <a href="https://www.facebook.com/" aria-label="Facebook">
-            <svg>
+            <svg width="7.33" height="16">
               <use xlink:href="#facebook"></use>
             </svg>
           </a>
         </li>
-        <li class="socials-list__item">
+        <li class="main-footer__socials-item">
           <a href="https://www.youtube.com/" aria-label="Youtube">
-            <svg>
+            <svg width="16" height="15.26">
               <use xlink:href="#youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <p class="developed-by">
-        <b class="developed-by-left">Разработано</b>
-        <a class="developed-by-right" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-          <svg>
+      <p class="main-footer__developed-by">
+        <b class="main-footer__developed-by-left">Разработано</b>
+        <a class="main-footer__developed-by-right" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          <svg width="26.27" height="33.33">
             <use xlink:href="#html-academy"></use>
           </svg>
         </a>

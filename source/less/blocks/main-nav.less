@@ -78,6 +78,12 @@
   }
 }
 
+
+.main-nav--closed .main-nav__toggle,
+.main-nav--opened .main-nav__toggle {
+  top: 40px;
+}
+
 .main-nav--opened .main-nav__toggle {
   top: 20px;
   right: 20px;
@@ -88,15 +94,16 @@
 
   outline: none;
   background: url("../img/icon-menu-cross-white.svg") no-repeat 0 0;
-
-  &:hover {
-    background: url("../img/icon-menu-cross-pink.svg") no-repeat 0 0;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
+
+.main-nav--opened .main-nav__toggle:hover {
+  background: url("../img/icon-menu-cross-pink.svg") no-repeat 0 0;
+}
+
+.main-nav--opened .main-nav__toggle:active {
+  opacity: 0.3;
+}
+
 
 @media (max-width: @tablet-only) {
   .main-nav--closed .main-nav__item {
@@ -144,7 +151,7 @@
     border: none;
   }
 
-  .main-nav__item .main-nav--active {
+  .main-nav__item .main-nav__item-link--active {
     padding-bottom: 8px;
 
     border-bottom: solid white 2px;
@@ -156,7 +163,6 @@
     justify-content: space-between;
     align-items: center;
     width: 620px;
-    padding-right: 10px;
   }
 
   .main-nav__toggle {

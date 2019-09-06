@@ -92,13 +92,13 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo logo" href="index.html">
-        <svg class="main-header__logo-img main-header__logo-mobile" width="74.426" height="22.859">
+        <svg class="main-header__logo-img main-header__logo-img--mobile" width="74.426" height="22.859">
           <use xlink:href="#logo-white-mobile"></use>
         </svg>
-        <svg class="main-header__logo-img main-header__logo-tablet" width="146.3" height="40.375">
+        <svg class="main-header__logo-img main-header__logo-img--tablet" width="146.3" height="40.375">
           <use xlink:href="#logo-white-tablet"></use>
         </svg>
-        <svg class="main-header__logo-img main-header__logo-desktop" width="146.3" height="40.375">
+        <svg class="main-header__logo-img main-header__logo-img--desktop" width="146.3" height="40.375">
           <use xlink:href="#logo-white-desktop"></use>
         </svg>
       </a>
@@ -109,7 +109,7 @@
             <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav--active">Фотографии</a>
+            <a class="main-nav__item-link main-nav__item-link--active">Фотографии</a>
           </li>
           <li class="main-nav__item">
             <a href="form.html">Конкурс</a>
@@ -333,7 +333,7 @@
                 </svg>
               </button>
               <div class="app__edit-line">
-                <button class="app__edit-toggle"></button>
+                <button class="app__edit-toggle" arialabel="ползунок для обрезки изображений"></button>
               </div>
             </div>
             <div class="app__edit-item app__edit-color">
@@ -342,7 +342,7 @@
                 </svg>
               </button>
               <div class="app__edit-line"></div>
-              <button class="app__edit-toggle"></button>
+              <button class="app__edit-toggle" arialabel="ползунок для изменения цвета изображений"></button>
             </div>
             <div class="app__edit-item app__edit-contrast">
               <button class="app__edit-img"> <svg width="35" height="35">
@@ -350,7 +350,7 @@
                 </svg>
               </button>
               <div class="app__edit-line"></div>
-              <button class="app__edit-toggle"></button>
+              <button class="app__edit-toggle" arialabel="ползунок для изменения контрастности изображений"></button>
             </div>
           </div>
           <div class="app__edit-btns">
@@ -371,33 +371,33 @@
           <use xlink:href="#logo-blue-desktop"></use>
         </svg>
       </a>
-      <ul class="socials-list">
-        <li class="socials-list__item">
+      <ul class="main-footer__socials">
+        <li class="main-footer__socials-item">
           <a href="https://www.twitter.com/" aria-label="Twitter">
-            <svg>
+            <svg width="16" height="13.41">
               <use xlink:href="#twitter"></use>
             </svg>
           </a>
         </li>
-        <li class="socials-list__item">
+        <li class="main-footer__socials-item">
           <a href="https://www.facebook.com/" aria-label="Facebook">
-            <svg width="20.673px" height="18.944px">
+            <svg width="7.33" height="16">
               <use xlink:href="#facebook"></use>
             </svg>
           </a>
         </li>
-        <li class="socials-list__item">
+        <li class="main-footer__socials-item">
           <a href="https://www.youtube.com/" aria-label="Youtube">
-            <svg>
+            <svg width="16" height="15.26">
               <use xlink:href="#youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <p class="developed-by">
-        <b class="developed-by-left">Разработано</b>
-        <a class="developed-by-right" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-          <svg>
+      <p class="main-footer__developed-by">
+        <b class="main-footer__developed-by-left">Разработано</b>
+        <a class="main-footer__developed-by-right" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          <svg width="26.27" height="33.33">
             <use xlink:href="#html-academy"></use>
           </svg>
         </a>
