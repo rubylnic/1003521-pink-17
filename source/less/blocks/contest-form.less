@@ -36,7 +36,7 @@
 .contest-form__item {
   position: relative;
 
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .contest-form .background-header__text {
@@ -137,12 +137,16 @@
   padding: 40px 20px;
 
   text-align: center;
+
+  span {
+    display: none;
+  }
 }
 
 @media (min-width: 660px) {
   .contest-form__description {
     width: 490px;
-    padding: 100px 0 70px;
+    padding: 90px 0 75px;
 
     font-size: 18px;
   }
@@ -260,6 +264,10 @@
   margin-bottom: 50px;
 }
 
+.contest-form__achievement .contest-form__item:last-of-type {
+  margin-bottom: 55px;
+}
+
 @media (min-width: 660px) {
   .contest-form__achievement {
     width: 620px;
@@ -327,6 +335,7 @@
 
   .contest-form__achievement .contest-form__item:nth-of-type(5) {
     order: 2;
+    width: 220px;
   }
 
   .contest-form__achievement .contest-form__item:nth-of-type(6) {
@@ -336,6 +345,11 @@
   .contest-form__achievement .contest-form__label_navy {
     padding-left: 60px;
   }
+
+  .contest-form__achievement .contest-form__item:last-of-type {
+    margin-bottom: 0;
+    width: 220px;
+  }
 }
 
 .contest-form__contact-information {
@@ -344,10 +358,14 @@
   border: 0;
 
   order: 0;
+
+  .contest-form__legend {
+    display: none;
+  }
 }
 
 .contest-form__contact-information .contest-form__list {
-  padding-top: 35px;
+  padding-top: 30px;
   padding-bottom: 25px;
 }
 
@@ -360,11 +378,15 @@
     border: 2px solid #f2f2f2;
 
     order: 2;
+
+    .contest-form__legend {
+    display: block;
+  }
   }
 
   .contest-form__contact-information legend {
     display: block;
-    padding-top: 53px;
+    padding-top: 45px;
   }
 
   .contest-form__contact-information .contest-form__list {
@@ -387,7 +409,7 @@
     right: 0;
 
     width: 63px;
-    height: 66px;
+    height: 64px;
 
     content: "";
     background-color: #e5e5e5;
@@ -473,8 +495,9 @@
 @media (min-width: 660px) {
   .contest-form__poll {
     width: 620px;
-    margin-bottom: 30px;
     padding: 0 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 
     border: 2px solid #f2f2f2;
     background-color: #ffffff;
@@ -512,7 +535,7 @@
 }
 
 .contest-form__review legend {
-  padding-top: 40px;
+  padding-top: 45px;
   padding-bottom: 15px;
 }
 
@@ -525,7 +548,7 @@
 .contest-form__review textarea {
   width: 280px;
   height: 200px;
-  margin: 0 auto 55px;
+  margin: 0 auto 40px;
 
   line-height: 30px;
 
@@ -535,8 +558,8 @@
 @media (min-width: 660px) {
   .contest-form__review {
     width: 620px;
-    margin-bottom: 70px;
-    padding: 0 60px;
+    margin-bottom: 75px;
+    padding: 0 55px;
 
     border: 2px solid #f2f2f2;
 
@@ -557,12 +580,17 @@
   .contest-form__review {
     width: 960px;
     margin-bottom: 65px;
+
+    legend {
+      margin-bottom: 15px;
+    }
   }
 
   .contest-form__review textarea {
     width: 820px;
     height: 125px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    padding-top: 10px;
   }
 }
 
@@ -704,7 +732,7 @@
 @media (min-width: 660px) {
   .submit {
     margin: 0;
-    padding: 15px 55px;
+    padding: 17px 58px;
 
     font-weight: 700;
   }
