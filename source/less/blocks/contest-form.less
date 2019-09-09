@@ -170,12 +170,12 @@
   justify-content: center;
   width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 @media (min-width: 660px) {
   .contest-form__form {
     width: 620px;
+    padding: 0 20px;
   }
 }
 
@@ -264,10 +264,6 @@
   margin-bottom: 50px;
 }
 
-.contest-form__achievement .contest-form__item:last-of-type {
-  margin-bottom: 55px;
-}
-
 @media (min-width: 660px) {
   .contest-form__achievement {
     width: 620px;
@@ -278,6 +274,10 @@
     background-color: #ffffff;
 
     order: 3;
+  }
+
+  .contest-form__achievement .contest-form__item:last-of-type {
+    margin-bottom: 55px;
   }
 
   .contest-form__achievement .contest-form__legend {
@@ -334,8 +334,9 @@
   }
 
   .contest-form__achievement .contest-form__item:nth-of-type(5) {
-    order: 2;
     width: 220px;
+
+    order: 2;
   }
 
   .contest-form__achievement .contest-form__item:nth-of-type(6) {
@@ -347,8 +348,8 @@
   }
 
   .contest-form__achievement .contest-form__item:last-of-type {
-    margin-bottom: 0;
     width: 220px;
+    margin-bottom: 0;
   }
 }
 
@@ -380,8 +381,8 @@
     order: 2;
 
     .contest-form__legend {
-    display: block;
-  }
+      display: block;
+    }
   }
 
   .contest-form__contact-information legend {
@@ -495,9 +496,9 @@
 @media (min-width: 660px) {
   .contest-form__poll {
     width: 620px;
-    padding: 0 20px;
-    padding-bottom: 20px;
     margin-bottom: 10px;
+    padding: 0 20px;
+    padding-bottom: 10px;
 
     border: 2px solid #f2f2f2;
     background-color: #ffffff;
@@ -524,7 +525,7 @@
 }
 
 .contest-form__poll .contest-form__item {
-  margin-bottom: 41px;
+  margin-bottom: 45px;
 }
 
 .contest-form__review {
@@ -535,7 +536,7 @@
 }
 
 .contest-form__review legend {
-  padding-top: 45px;
+  padding-top: 40px;
   padding-bottom: 15px;
 }
 
@@ -558,7 +559,7 @@
 @media (min-width: 660px) {
   .contest-form__review {
     width: 620px;
-    margin-bottom: 75px;
+    margin-bottom: 65px;
     padding: 0 55px;
 
     border: 2px solid #f2f2f2;
@@ -568,7 +569,7 @@
 
   .contest-form__review textarea {
     width: 500px;
-    height: 190px;
+    height: 195px;
   }
 
   .contest-form__review .contest-form__legend {
@@ -651,6 +652,7 @@
 
 .contest-form__radio-indicator {
   position: absolute;
+  bottom: -4px;
   left: 20px;
 
   width: 35px;
